@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-size: larger;
+  background-color: #1F252E;
+}
+
+p {
+  font-size: 0.98rem;
+  color: #d1d1d1;
+}/*# sourceMappingURL=main.css.map */
