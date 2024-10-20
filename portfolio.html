@@ -1,162 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/portfolio.css">
-  
-  <title>Portfolio</title>
+    <title>Portfolio</title>
+  </head>
 
-</head>
-
-<body>
-  <header>
-    <div class="icon">
-      <img src="img/Group 2.jpg" alt="Group 2.jpg">
-    </div>
-    <div>
-    <input type="checkbox" id="click">
-    <label for="click" class="mainicon">
-      <div class="menu">
-        <i class="bi bi-list"></i>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">Meet.</a>
       </div>
-    </label>
-    <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="portfoliolist.html">Case Study</a>
-      <a href="#projects">Projects</a>
-      
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon">
+        <div class="menu">
+          <i class="bi bi-list"></i>
+        </div>
+      </label>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#services">Skills</a>
+        <a href="#about">About</a>
+        <a href="#review">Projects</a>
+        <a href="#review">Case Study</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-
-  <section>
-    <div class="main">
-      <div class="detail">
-        <h1><span>Hi, It's Me</span> <br> I'm <span style="color:#00E8F8;">Meet</span></h1>
-        <p>I am a UI/UX Designer, and I specialize in crafting the visual and user interface elements of websites and web applications <br> and Designer  who also codes . </p>
-        <div class="social">
-          <a href="https://github.com/ParmarMeet"><i class="bi bi-github"></i></a>
-          <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/meet-parmar-4506b5299/"><i class="bi bi-linkedin"></i></a>
-          <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+    <section>
+      <div class="main">
+        <div class="detail">
+          <h1>
+            <span style="color: #00ffa8"> Hello, I'm Meet</span>
+          </h1>
+          <p>
+            I am a Interactive Media Design Student <br />
+            Desiring to be a UI/UX Designer.
+          </p>
+        </div>
+        <div class="video-container">
+          <video controls>
+            <source src="video/port.mp4" type="port/mp4" />
+          </video>
         </div>
       </div>
-      <div >
-        <video width="100%" controls="">
-                        <source src="img/port.mp4" type="video/mp4">
-                        <source src="img/port.mp4" type="video/ogg">
-                        Your browser does not support HTML video.
-                    </video>
+    </section>
 
+    <!-- --Services Section--->
+    <section id="services">
+      <div class="Services">
+        <h2><span style="color: #00ffa8"> My Skills </span></h2>
+        <div class="services-box">
+          <div class="info-box">
+            <i class="bi bi-code-slash"></i>
+            <h3>Web Designing</h3>
+            <p>
+              Crafting intuitive and user-friendly web interfaces with seamless
+              user experiences
+            </p>
+          </div>
+          <div class="info-box">
+            <i class="bi bi-play-circle"></i>
+            <h3>Motion Designing</h3>
+            <p>
+              Bringing visuals to life through dynamic and engaging motion
+              design..
+            </p>
+          </div>
+          <div class="info-box">
+            <i class="bi bi-scissors"></i>
+            <h3>Video Editing</h3>
+            <p>Transforming raw footage into compelling narratives.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section id="about">
-    <div class="about-me">
-      <div class="icon">
-        <img src="img/pass4.png" alt="">
+    <!---About Me-->
+    <section id="about">
+      <div class="about-me">
+        <div class="icon">
+          <img src="img/Image 18.jpg" alt="image" />
+        </div>
+        <div>
+          <div class="menu">
+            <h2>About <span style="color: #00ffa8">Me</span></h2>
+            <p>
+              I am a passionate UI/UX designer currently studying Interactive
+              Media Design at Fanshawe College. My focus is on creating
+              user-centered digital experiences that are both visually appealing
+              and highly functional. I enjoy blending creativity with
+              problem-solving to design intuitive interfaces that enhance user
+              engagement. Through my coursework and personal projects, I am
+              developing a deep understanding of user research, wireframing,
+              prototyping, and interaction design principles. I'm excited to
+              apply my growing skills in real-world projects that improve the
+              way people interact with technology.
+            </p>
+            <div class="contact">
+              <span><i class="bi bi-telephone-fill"></i></span>+1 192 3876544
+              <span><i class="bi bi-envelope-check-fill"></i></span
+              >meetp1415@gmail.com
+            </div>
+          </div>
+        </div>
+
+        <div class="container project" id="review">
+          <h2><span style="color: #00ffa8"> Projects </span></h2>
+
+          <div class="item image-control">
+            <div class="rating">
+              <div>
+                <img src="img/burplelogo.jpg" alt="" />
+              </div>
+              <div>
+                <h3>Burple Drinks</h3>
+              </div>
+            </div>
+            <p>
+              Bursting with bold, vibrant flavors, Burple drinks offer a
+              refreshing twist to every sip. Perfect for those who crave a
+              unique, thirst-quenching experience."
+            </p>
+          </div>
+          <div class="item image-control">
+            <div class="rating">
+              <div>
+                <img src="img/musiclogo.jpg" alt="" />
+              </div>
+              <div>
+                <h3>Music Mixer</h3>
+              </div>
+            </div>
+            <p>
+              Craft the perfect soundtrack with precision blending and seamless
+              transitions. Elevate your DJ skills and create unforgettable mixes
+              for any crowd.
+            </p>
+          </div>
+          <div class="item image-control">
+            <div class="rating">
+              <div>
+                <img src="img/music_mixer.jpg" alt="" />
+              </div>
+              <div>
+                <h3>Earbuds</h3>
+              </div>
+            </div>
+            <p>
+              Experience crisp, immersive sound with every beat, whether you're
+              on the go or relaxing. These sleek earbuds deliver premium audio
+              quality in a comfortable, compact form.
+            </p>
+          </div>
+          <div class="item image-control">
+            <div class="rating">
+              <div>
+                <img src="img/ELIN.com App.jpg" alt="" />
+              </div>
+              <div>
+                <h3>Elin Cosmetics</h3>
+              </div>
+            </div>
+            <p>
+              Empowering beauty with high-quality, cruelty-free products
+              designed to enhance your natural glow. Elin Cosmetics offers a
+              blend of elegance and innovation for every makeup enthusiast.
+            </p>
+          </div>
+        </div>
       </div>
+
+      div class="container project" id="review"
+      <h2><span style="color: #00ffa8"> Case Study </span></h2>
       <div>
-        <h2>About <span style="color:#00E8F8">Me</span></h2>
-        <p>Hello, I'm Meet , My goal is to embark on a dynamic journey towards becoming a UI/UX Designer. With a strong foundation in interactive media and a keen eye for design, I'm dedicated to creating engaging and user-friendly web experiences. Welcome to my portfolio, where you can explore my evolving skills and projects in this exciting field.</p>
-        <br>
-        <p>SKILLS : ADOBE XD, ADOBE ILLUSTRATOR, ADOBE PHOTOSHOP</p>
-        <div class="contact">
-          <span><i class="bi bi-telephone-fill"></i></span>+1 5197024835
-          <span><i class="bi bi-envelope-check-fill"></i></span>parmeet1415@gmail.com
-        </div>
+        <img src="img/elin.jpg" alt="" />
       </div>
-    </div>
-  </section>
 
+      <!--Contct Us-->
+      <body>
+        <section class="contact-form" id="contact">
+          <h2>Liked <span style="color: #00ffa8">My Work ?</span></h2>
+          <form action="#">
+            <div class="input-data">
+              <input type="text" name="firstName" placeholder="First Name" />
+              <input type="text" name="lastName" placeholder="Last Name" />
+            </div>
+            <div class="input-data">
+              <input type="email" name="email" placeholder="Email" />
+              <input type="tel" name="number" max="10" placeholder="Phone No" />
+            </div>
+            <textarea
+              name="massage"
+              placeholder="Write Messsage"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Send" class="send" />
+          </form>
+        </section>
+      </body>
+      <script></script>
+    </section>
 
-  
-  <section id="services" id="services">
-    <div class="Services">
-      <h2>My <span style="color: #00E8F8;">Services</span></h2>
-      <div class="services-box">
-        <div class="info-box">
-          <i class="bi bi-code-slash"></i>
-          <h3>Web Development</h3>
-          <p>Crafting dynamic and responsive websites to bring your online vision to life.</p>
-        </div>
-        <div class="info-box">
-          <i class="bi bi-wordpress"></i>
-          <h3>Web Design </h3>
-          <p> Creating visually stunning and user-friendly interfaces to enhance your digital presence.</p>
-        </div>
-        <div class="info-box">
-          <i class="bi bi-bar-chart-fill"></i>
-          <h3>Logo Design</h3>
-          <p> Crafting distinctive and memorable logos that represent your brand's identity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="Services">
-      <h2>My <span style="color: #00E8F8;">Projects</span></h2>
-      <div class="services-box">
-        <div class="info-box">
-         
-          <h3>Earbuds Website</h3>
-            <img src="img/earbuds.jpg" alt="earbuds.jpg">
-          <p>Earbud website epitomized a seamless blend of cutting-edge technology and user-centric design, crafting an immersive audio experience.</p>
-          <a class="link-ser" href="earbu-casestudy.html">Click Here</a>
-        </div>
-        <div class="info-box">
-          
-          <h3>Music Mixure Website </h3>
-          <img src="img/musicmix.jpg" alt="earbuds.jpg">
-          <p> The music mixer website development orchestrated a seamless user interface, empowering effortless audio composition through intuitive drag-and-drop functionality.</p>
-          <a class="link-ser" href="musicmixer.html">Click Here</a>
-        </div>
-        <div class="info-box">
-          
-          <h3>Burple Drink Website</h3>
-          <img src="img/burple.jpg" alt="burple.jpg">
-          <p> The Burple Juice website development encapsulated freshness and innovation, fusing vibrant design.</p>
-          <a class="link-ser" href="burple.html">Click Here</a>  
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  
-  
-
-  
-  <section class="contact-form" id="contact">
-    <h2>Leave <span style="color: #00E8F8">Message</span></h2>
-    <form action="#">
-      <div class="input-data">
-        <input type="text" name="firstName" placeholder="First Name">
-        <input type="text" name="lastName" placeholder="Last Name">
-      </div>
-      <div class="input-data">
-        <input type="email" name="email" placeholder="Email">
-        <input type="tel" name="number" max="10" placeholder="Phone No">
-      </div>
-      <textarea name="massage" placeholder="Write Massage" rows="10"></textarea>
-      <input type="submit" value="Send" class="send">
-    </form>
-  </section>
-
-</body>
-<script>
-
- 
-</script>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
