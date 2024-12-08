@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/main.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+  <title>Portfolio</title>
+
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Scroll to Top Arrow Styles */
+    .arrow-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      display: none; /* Initially hidden */
+      z-index: 100;
+    }
+
+    .arrow-link:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Modal Slider Styles */
+    .slider-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+    }
+
+    .slider-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 800px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slider-images {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-item {
+      width: 100%;
+      display: block;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    button.prev,
+    button.next {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    button.prev:hover,
+    button.next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    button.prev {
+      position: absolute;
+      left: 10px;
+    }
+
+    button.next {
+      position: absolute;
+      right: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #00E8F8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="icon">
+      <img src="img/logo.png" alt="logo">
+    </div>
+    <div>
+      <input type="checkbox" id="click">
+      <label for="click" class="mainicon">
+        <div class="menu">
+          <i class="bi bi-list"></i>
+        </div>
+      </label>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="portfoliolist.html" class="active">Case Study</a>
+       <a href="portfolio-project.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="about-me">
+      <div class="icon">
+        <img src="img/earbuds.jpg" alt="earbuds.jpg" onclick="openSlider(0)">
+      </div>
+      <div>
+        <h2>Earbuds website</h2>
+        <p>"Discover premium sound and unparalleled comfort with our cutting-edge earbuds. Elevate your audio experience at our sleek and user-friendly website."</p>
+        <br>
+        <a class="link-ser" href="earbu-casestudy.html">Click Here</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-me">
+      <div class="icon">
+        <img src="img/musicmix.jpg" alt="musicmix.jpg" onclick="openSlider(1)">
+      </div>
+      <div>
+        <h2>Music Mixer</h2>
+        <p>"The creation of the music mixer website was a testament to intuitive design and seamless functionality. At its core, the concept revolved around simplicity and accessibility—empowering users to craft music effortlessly. "</p>
+        <br>
+        <a class="link-ser" href="musicmixer.html">Click Here</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-me">
+      <div class="icon">
+        <img src="img/burple.jpg" alt="burple.jpg" onclick="openSlider(2)">
+      </div>
+      <div>
+        <h2>Burple Juice website</h2>
+        <p>"The Burple Chronicles: From Chance encounter To Iconic Libation"</p>
+        <br>
+        <a class="link-ser" href="burple.html">Click Here</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Arrow -->
+  <div class="arrow-link">&#8679;</div>
+
+  <!-- Image Slider Modal -->
+  <div id="imageSlider" class="slider-modal">
+    <span class="close" onclick="closeSlider()">&times;</span>
+    <div class="slider-container">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="slider-images">
+        <img src="img/earbuds.jpg" alt="Earbuds" class="slider-item">
+        <img src="img/musicmix.jpg" alt="Music Mix" class="slider-item">
+        <img src="img/burple.jpg" alt="Burple" class="slider-item">
+      </div>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <section class="contact-form" id="contact">
+    <h2>Leave <span style="color: #00E8F8">Message</span></h2>
+    <form action="#">
+      <div class="input-data">
+        <input type="text" name="firstName" placeholder="First Name">
+        <input type="text" name="lastName" placeholder="Last Name">
+      </div>
+      <div class="input-data">
+        <input type="email" name="email" placeholder="Email">
+        <input type="tel" name="number" max="10" placeholder="Phone No">
+      </div>
+      <textarea name="massage" placeholder="Write Massage" rows="10"></textarea>
+      <input type="submit" value="Send" class="send">
+    </form>
+  </section>
+
+  <!-- Link to External JS -->
+<script src="js/main.js"></script>
+<script defer src="js/gsap.js"></script>
+</body>
+
+</html>
