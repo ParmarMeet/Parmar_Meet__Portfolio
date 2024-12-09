@@ -1,10 +1,22 @@
-# Welcome to My Portfolio
+# Welcome to Meet's Portfolio
 
-Portfolio Repo
+Welcome to Meet's Portfolio. He is passionate Interactive Media Design Student
+who wants to be a UI/UX Designer with a keen eye for detail and a
+drive to create seamless digital experiences. With a strong founda-
+tion in design tools like Cinema 4D, Adobe Photoshop, Illustrator,
+Premiere Pro, and After Effects,
 
-MY PORTFOLIO
+My portfolio is a comprehensive showcase of my projects and assignments, reflecting the skills and knowledge I have gained during my Interactive Media Design course. It features an "About Me" section with details about myself, a collection of my work, a gallery displaying logo designs, a fully functional contact page for messaging, testimonials, a list of my accomplishments, and a structured footer for easy navigation.
 
-My Portfolio serves as a dynamic showcase of my skills, expertise, and passion as a front-end developer. Through a visually engaging project gallery, responsive design, and interactive resume, I aim to highlight my proficiency in front-end technologies and showcase my commitment to creating user-friendly web applications. By offering insightful blog posts and a user-friendly contact form, I not only demonstrate my expertise but also invite you to engage with me easily. With an emphasis on clean code and design excellence, this portfolio serves as a testament to my dedication to delivering top-notch web experiences.
+I bring creative concepts to life
+through striking visuals and animations. I’m also skilled in front-
+end development, utilizing HTML, CSS, JavaScript, and SASS
+to transform innovative ideas into functional, user-friendly
+websites. My approach merges creativity with technical expertise
+to deliver projects that are not only aesthetically pleasing but also
+highly intuitive and engaging. I’m always eager to explore new
+challenges, push boundaries, and continue learning in the ever-
+evolving world of design and technology.
 
 Languages Used:
 
@@ -37,7 +49,7 @@ To install a GitHub repository, first clone it using 'git clone' with the reposi
 
 ## Credits
 
-MEET PARMAR
+MEET PARMAR @ Fanshawe College
 
 ## License
 
